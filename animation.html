@@ -1,0 +1,35 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<style>   
+div {  
+    width: 50px;  
+    height: 50px;  
+    background: black(255, 192, 251);  
+    position: relative;  
+    -webkit-animation: myfirst 5s; /* Chrome, Safari, Opera */  
+    animation: myfirst 5s;  
+}  
+/* Chrome, Safari, Opera */  
+@-webkit-keyframes myfirst {  
+    0%   {background:black; left:0px; top:0px;}  
+    25%  {background:red; left:300px; top:0px;}  
+    50%  {background:blue; left:200px; top:300px;}  
+    75%  {background:green; left:0px; top:200px;}  
+    100% {background:pink; left:0px; top:0px;}  
+}  
+/* Standard syntax */  
+@keyframes myfirst {  
+    0%   {background:black; left:0px; top:0px;}  
+    25%  {background:red; left:300px; top:0px;}  
+    50%  {background:blue; left:300px; top:200px;}  
+    75%  {background:green; left:0px; top:200px;}  
+    100% {background:black; left:0px; top:0px;}  
+}  
+</style>  
+</head>  
+<body>  
+<p><b>Note:</b> The Internet Explorer 9 and its earlier versions don't support this example.</p>  
+<div></div>  
+</body>  
+</html>
